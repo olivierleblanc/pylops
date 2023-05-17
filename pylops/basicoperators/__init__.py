@@ -38,6 +38,9 @@ A list of operators present in pylops.basicoperators :
     Gradient                        Gradient.
     FirstDirectionalDerivative      First Directional derivative.
     SecondDirectionalDerivative     Second Directional derivative.
+    ROP                             Rank-One Projection.
+    S_Om                            S_Om operator.
+    S_Om_1D                         S_Om_1D operator.
 """
 
 from .FunctionOperator import *
@@ -73,6 +76,10 @@ from .Laplacian import *
 from .Gradient import *
 from .DirectionalDerivative import *
 
+from .ROP import ROP
+from .S_Om import S_Om
+from .S_Om_1D import S_Om_1D
+
 __all__ = [
     "FunctionOperator",
     "MemoizeOperator",
@@ -107,4 +114,7 @@ __all__ = [
     "Gradient",
     "FirstDirectionalDerivative",
     "SecondDirectionalDerivative",
+    "ROP",
+    "S_Om",
+    "S_Om_1D",
 ]
